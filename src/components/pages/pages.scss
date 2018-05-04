@@ -1,0 +1,259 @@
+.pages{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blog{
+    background: url("../../assets/img/pattern.png");   
+    padding-top: 30px; 
+}
+
+.blog__wrapper{
+    display: flex;
+    
+}
+.blog__body{
+    width: 100%;
+
+}
+
+.blog__side{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.show-more{
+    padding: 40px;
+    font-size: 24px;
+    color: black;
+    font-family: $HelveticaBold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $border;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:hover{
+        color: white;
+        background: $blue;
+        border-color: #79deff;    
+    }
+}
+
+.postPage{
+    background: url("../../assets/img/pattern.png");
+    
+
+}
+
+.postPage__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+
+.postItem{
+    padding: 30px 97px 40px 97px;
+    border: 2px solid $border;
+    border-radius: 20px;
+    background: $blue;
+    color: white;
+    border-color: #79deff;    
+    .post__content-img path {
+        fill: #fff;
+    }
+   
+}
+
+
+.postPage__img, .postPage__title{
+    margin-left: 20px;
+}
+
+.postPage__soc{
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    
+
+}
+
+.postPage__soci{
+    border: 1px solid white;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+    
+    
+}
+
+.vk{
+    background: #45668e;
+}
+
+.fb{
+    background: #3b5998;
+}
+
+.tw{
+    background: #55abed;
+}
+
+.plus{
+    background: #91a2a3;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.errorPage{
+    margin-bottom: 40px;
+}
+.errorPage-text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorPage-img{
+    margin: 90px 0;
+}
+
+.modal{
+    display: flex;
+    width: 585px;
+    max-height: 400px;
+    position: absolute;
+    top: 90px;
+    right: 18px;
+    background: #fff;
+    z-index: 9999;
+    flex-direction: column;
+    border: 2px solid $border;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-y: scroll;
+    
+}
+
+.modal__title{
+    font-size: 20px;
+    font-family: $HelveticaBold;
+    padding: 25px 40px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid $border;
+}
+.modal__body{
+   
+}
+.modal__item{
+    padding: 20px 40px;
+    display: flex;
+    border-bottom: 1px solid $border;
+    cursor: pointer;    
+    &:hover{
+        background: #f1f1f1;
+        .modal__img{
+            border-color: $blue;
+        }
+
+    }
+}
+
+.modal__triangle{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-top: 2px solid $border;
+    position: absolute;
+    top: 80px;
+    right: 49px;
+    z-index: 99999;
+    transform: rotate(-45deg);
+    border-right: 2px solid $border;
+    
+}
+.modal__img{
+    border-radius: 50%;
+    border: 2px solid $border;
+    width: 55px;
+    height: 55px;
+}
+
+.modal__push, .modal__date{
+    font-size: 18px;
+    font-family: $HelveticaRegular;
+}
+
+.modal__date{
+    color: #868686;
+}
+
+.modal__col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.modal{
+    &::-webkit-scrollbar {
+    width: 5px;
+    height: 200px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #e1f5fc;
+  }
+  &::-webkit-scrollbar-button {
+    background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $blue; 
+
+}
+}
+
+.modal__row{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    label{
+        font-size: 14px;
+        font-family: $HelveticaRegular;
+        width: 100%;
+    }
+}
+
+.modal__label{
+    font-size: 20px;
+    font-family: $HelveticaRegular;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.modal__input{
+    height: 25px;
+    width: 260px;
+    &:focus{
+        outline: #f8ad13; 
+    }
+}
+
+
+#pushModal, #reg, #login{
+    display: none;
+}

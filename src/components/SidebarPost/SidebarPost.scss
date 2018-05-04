@@ -1,0 +1,30 @@
+.sidebar__post{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sidebar__post-title{
+    font-size: 18px;
+    cursor: pointer;
+    color: $blue;
+    margin-bottom: 5px;
+    font-family: $HelveticaRegular;
+    word-wrap: break-word;
+    text-decoration: underline;
+    &:hover{
+        color: #fda94d;
+        text-decoration: none;
+    }
+}
+
+.sidebar__post-date{
+    color: #868686;
+    font-family: $HelveticaRegular;
+    font-size: 14px;
+}

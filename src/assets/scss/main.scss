@@ -1,0 +1,88 @@
+
+// main
+@import 'settings';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 1fr 1005px 1fr;
+    position: relative;
+    grid-template-areas: "... wrapper ...";
+}
+
+.page-wrapper{
+    grid-area: wrapper;
+}
+
+.button{
+    height: 55px;
+    min-width: 230px;
+    background: #fbba35;
+    color:  white;  
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $HelveticaRegular;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background: #f8ad13;
+    }
+    &__img{
+        margin-right: 10px;
+        margin-left: -50px;
+    }
+}
+
+#top {
+    top: 0;
+    cursor: pointer;
+    display: none;
+    font-size: 150%;
+    position: fixed;
+    left: 0;
+    z-index: 999999;
+    height: 100%;
+    &:hover{
+        background: rgba(#fff, 0.7);
+    }
+    img{
+        margin: 15px;
+    }
+}
+
+// import files of blocks
+@import "../../components/headerComponent/header";
+@import "../../components/slide1/slide1";
+@import "../../components/slide2/slide2";
+@import "../../components/slide3/slide3";
+@import "../../components/slide4/slide4";
+@import "../../components/footerComponent/footer";
+@import "../../components/pages/pages";
+@import "../../components/SidebarHashtag/SidebarHashtag";
+@import "../../components/SidebarPost/SidebarPost";
+@import "../../components/post/post";
+
+
+@import 'media';
+
+@media screen and (max-width: 820px){
+    .page{
+        display: grid;
+        grid-template-columns:  1fr ;
+        grid-template-areas: "wrapper";
+    }
+  
+}
+
+

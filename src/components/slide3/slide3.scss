@@ -1,0 +1,56 @@
+.slide3{
+    background: url("../../assets/img/slide3/bg.png") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+
+.slide3__wrapper{
+    padding: 130px 0 100px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.slide3__img{
+    position: absolute;
+    bottom: 0;
+    right: 128px;
+}
+
+.slide3__title{
+    font-size: 48px;
+    color: white;
+    font-family: $HelveticaBold;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.slide3__subt{
+    font-family: $HelveticaBold;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.slide3__text{
+    font-size: 24px;
+    font-family: $HelveticaRegular;
+    margin-bottom: 50px;
+}
+
+.slide3__button{
+    margin-left: 30px;
+}
+
+.modal{
+    position: relative;
+    width: 560px;
+    height: 315px;
+}
+.close{
+    position: absolute;
+}
+
+.popup-content{
+    will-change: auto;
+}

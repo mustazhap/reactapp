@@ -1,0 +1,28 @@
+.slide4{
+    background: url("../../assets/img/pattern.png");    
+    padding: 40px 0;
+}
+
+.slide4__wrapper{
+    padding: 50px 100px 25px 100px;
+    background: #f8ad13;
+    color: white;
+    border-radius: 20px;
+}
+
+.slide4__title{
+    font-size: 36px;
+    font-family: $HelveticaBold;
+    text-align: left;
+}
+
+.slide4__text{
+    font-size: 24px;
+    font-family: $HelveticaRegular;
+    margin-left: 15px;
+}
+
+.slide4__row{
+    margin-top: 30px;
+    display: flex;
+}
